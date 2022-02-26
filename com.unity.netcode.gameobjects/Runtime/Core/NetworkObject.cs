@@ -863,7 +863,7 @@ namespace Unity.Netcode
             }
         }
 
-        internal ushort GetNetworkBehaviourOrderIndex(NetworkBehaviour instance)
+        public ushort GetNetworkBehaviourOrderIndex(NetworkBehaviour instance)
         {
             // read the cached index, and verify it first
             if (instance.NetworkBehaviourIdCache < ChildNetworkBehaviours.Count)
